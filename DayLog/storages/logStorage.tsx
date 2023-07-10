@@ -1,5 +1,10 @@
 import AsyncStorage from "@react-native-community/async-storage"
 
+interface logsStorage {
+    get(): Promise<any>;
+    set(data: any): Promise<void>;
+}
+
 const key: string = 'logs'
 
 const logsStorage = {

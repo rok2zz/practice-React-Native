@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1043496662114",
+    "project_id": "public-gallery-fff4e",
+    "storage_bucket": "public-gallery-fff4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043496662114:android:70e8176800579ab6788d3b",
+        "android_client_info": {
+          "package_name": "com.publicgallerychaerok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043496662114-6aterjkam6m5iv0quni96s6l2ljm1q75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.publicgallerychaerok",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1043496662114-fkqunnf09euj8d1052q17me58u2el803.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk-2QrO0ZgByULBI3wJZNn2-bLVHDyO8o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043496662114-fkqunnf09euj8d1052q17me58u2el803.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

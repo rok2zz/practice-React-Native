@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native'
-import React, { useReducer, useState } from 'react'
+import React, { useReducer } from 'react'
 import { View, StyleSheet, Pressable, Text } from 'react-native'
 import TransparentCircleButton from './TransparentCircleButton'
 import { format } from 'date-fns'
@@ -7,10 +7,10 @@ import { ko } from 'date-fns/locale'
 import DateTimePickerModal from 'react-native-modal-datetime-picker'
 
 interface Props {
-    onSave(): void,
-    onAskRemove(): void,
     isEditing: boolean,
     date: Date,
+    onSave(): void,
+    onAskRemove(): void,
     onChangeDate(date: Date): void
 }
 

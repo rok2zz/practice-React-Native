@@ -4,19 +4,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import WriteHeader from '../components/WriteHeader';
 import WriteEditor from '../components/WriteEditor';
 import { useNavigation } from '@react-navigation/native';
-import LogContext from '../contexts/LogContext';
+import LogContext, { Logs } from '../contexts/LogContext';
 import { RootStackParamList } from './RootStack';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Write'>;
 
 function WriteScreen({ route }: Props): JSX.Element {
-	const log: any = route.params?.log
+	const KR_TIME_DIFF = 9 * 60 * 60 * 1000
+	const log: Logs = route.params?.log
 	const navigation: any = useNavigation()
+	const koDate: Date = new Date (new Date().getTime() + (new Date().getTimezoneOffset() * 60 * 1000) + KR_TIME_DIFF)
 
 	const [ title, setTitle ]: any = useState<string>(log?.title ?? '')
 	const [ body, setBody ]: any = useState<string>(log?.body ?? '')
-	const [ date, setDate ]: any = useState<Date>(log ? new Date(log.date) : new Date())
+	const [ date, setDate ]: any = useState<Date>(log ? new Date(log.date) : koDate)
 
 
 	const { onCreate, onModify, onRemove }: any = useContext(LogContext)
